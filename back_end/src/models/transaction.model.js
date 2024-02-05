@@ -31,10 +31,10 @@ const transactionSchema = mongoose.Schema(
       required: true,
       trim: true
     },
-    synchronize:[{
+    synchronize:{
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Synchronize'
-    }]
+    }
   },
   {
     timestamps: true,
